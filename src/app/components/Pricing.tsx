@@ -10,7 +10,7 @@ export default function Pricing() {
         <SectionHeading
           eyebrow="Prijzen"
           title="Heldere vanaf-prijzen voor professioneel werk."
-          description="Vanaf-prijzen. Na korte intake krijg je een vaste prijs op basis van functies, designniveau en gewenste oplevering."
+          description="Kies een startpunt dat past bij jouw project. Na een korte intake maken we de scope en vaste prijs duidelijk."
         />
 
         <div className="grid gap-4 lg:grid-cols-4">
@@ -66,10 +66,15 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="reveal mx-auto mt-8 max-w-4xl rounded-2xl border border-[#d7b46a]/18 bg-white/[0.035] p-5 text-center text-sm leading-7 text-[#efe4c7] backdrop-blur">
-          Elke opdracht is anders. De prijs hangt af van functies, hoeveelheid pagina&apos;s,
-          designniveau en gewenste oplevering.
-        </p>
+        <div className="reveal mx-auto mt-8 max-w-4xl rounded-2xl border border-[#d7b46a]/18 bg-white/[0.035] p-5 text-center text-sm leading-7 text-[#efe4c7] backdrop-blur">
+          <p>
+            Alle prijzen zijn vanaf-prijzen. Na een korte intake krijg je een vaste prijs
+            op basis van functies, designniveau, aantal pagina&apos;s en gewenste oplevering.
+          </p>
+          <p className="mt-2 text-[#d7b46a]">
+            Website live zetten en domein koppelen kan worden meegenomen in het project.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -33,7 +33,8 @@ export default function Contact() {
               Klaar om iets gaafs te bouwen?
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[#b9b0a1]">
-              Stuur mij een bericht met jouw idee, project of campagne.
+              Stuur mij een bericht met jouw idee, project of campagne. Dan kijken we
+              samen wat de beste aanpak is.
             </p>
             <div className="mt-8 flex flex-wrap gap-2 text-sm text-[#a99f8f]">
               {["Software", "Websites", "AI tools", "Promotiecontent"].map((item) => (

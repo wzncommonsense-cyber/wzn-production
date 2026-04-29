@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 const siteDescription =
-  "WZN Production helpt bedrijven, zzp'ers en creators met websites, software, AI tools, content en promotie die zichtbaar resultaat opleveren.";
+  "WZN Production is een premium creative, AI en software agency voor websites, webapps, AI tools, promotiecontent, flyers en online zichtbaarheid.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wznproduction.nl"),
   title: {
-    default: "WZN Production | Software, Websites, Content & Promotie",
+    default: "WZN Production | Creative AI & Software Agency",
     template: "%s | WZN Production",
   },
   description: siteDescription,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "WZN Production | Also Impossible is Possible",
+    title: "WZN Production | Creative AI & Software Agency",
     description: siteDescription,
     url: "https://wznproduction.nl",
     siteName: "WZN Production",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WZN Production | Software, Websites, Content & Promotie",
+    title: "WZN Production | Creative AI & Software Agency",
     description: siteDescription,
   },
   robots: {

@@ -14,8 +14,8 @@ export default function ContactPage() {
     <PageFrame>
       <SubPageHero
         eyebrow="Contact"
-        title="Stuur jouw idee, project of campagne door."
-        description="Geen nepformulier: kies direct Instagram, TikTok of mail en stuur een bericht naar WZN Production."
+        title="Klaar om iets gaafs te bouwen?"
+        description="Stuur mij een bericht met jouw idee, project of campagne. Dan kijken we samen wat de beste aanpak is."
       />
       <Contact />
     </PageFrame>

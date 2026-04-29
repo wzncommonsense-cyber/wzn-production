@@ -13,6 +13,10 @@ export const services = [
     title: "Websites & webapps",
     description:
       "Strakke sites en webapps die jouw aanbod professioneel laten landen.",
+    benefit:
+      "Je krijgt een betrouwbare online presentatie die vertrouwen wekt en bezoekers naar actie stuurt.",
+    fit:
+      "Geschikt voor starters, ondernemers, creators en kleine bedrijven die professioneel online willen staan.",
     detail:
       "Voor bedrijven, zzp'ers en creators die een professionele digitale basis willen: snel, responsive, duidelijk en passend bij je merk.",
     points: ["Landingspagina's", "Bedrijfssites", "Webapps en dashboards"],
@@ -22,6 +26,10 @@ export const services = [
     title: "Software op maat",
     description:
       "Dashboards, tools en applicaties die passen bij jouw workflow.",
+    benefit:
+      "Je bespaart tijd, krijgt meer overzicht en kunt processen slimmer laten verlopen.",
+    fit:
+      "Geschikt voor maatwerk tools, interne dashboards, demo's en systemen die niet standaard bestaan.",
     detail:
       "Maatwerk software voor taken die je slimmer, sneller of overzichtelijker wilt uitvoeren. Van demo tot bruikbare tool.",
     points: ["Interne tools", "Demo-apps", "Workflow systemen"],
@@ -31,6 +39,10 @@ export const services = [
     title: "AI tools & automatisering",
     description:
       "Slimme workflows die tijd besparen en output versnellen.",
+    benefit:
+      "Je werkt sneller, consistenter en met minder handmatig werk in je dagelijkse processen.",
+    fit:
+      "Geschikt voor creators, teams en ondernemers die AI praktisch willen inzetten zonder onnodige complexiteit.",
     detail:
       "Praktische AI-oplossingen die repeterend werk verminderen en helpen met content, mail, analyse of processen.",
     points: ["AI assistants", "Automatisering", "Slimme prompts en flows"],
@@ -40,6 +52,10 @@ export const services = [
     title: "Promotiecontent",
     description:
       "Korte video's en visuals voor aandacht, vertrouwen en actie.",
+    benefit:
+      "Je aanbod wordt sneller duidelijk en krijgt meer kans om op te vallen op social media.",
+    fit:
+      "Geschikt voor acties, lanceringen, aanbiedingen, content creators en lokale bedrijven.",
     detail:
       "Promotie die helder communiceert wat je aanbiedt en waarom mensen moeten reageren, klikken of contact opnemen.",
     points: ["Reclamevideo's", "Campagne visuals", "Social promotie"],
@@ -49,6 +65,10 @@ export const services = [
     title: "Flyers & social posts",
     description:
       "Campagnemateriaal dat strak voelt en past bij jouw merk.",
+    benefit:
+      "Je krijgt visuals die verkoopbaar ogen en beter passen bij een serieuze merkuitstraling.",
+    fit:
+      "Geschikt voor events, online campagnes, productpromoties en social updates.",
     detail:
       "Visueel materiaal voor acties, lanceringen, events en aanbiedingen met een premium WZN-afwerking.",
     points: ["Flyers", "Banners", "Instagram/TikTok posts"],
@@ -58,6 +78,10 @@ export const services = [
     title: "Contentstrategie",
     description:
       "Een duidelijke lijn voor zichtbaarheid, planning en groei.",
+    benefit:
+      "Je weet beter wat je moet posten, voor wie je het maakt en welk doel elke contentvorm heeft.",
+    fit:
+      "Geschikt voor ondernemers en creators die consistenter willen worden en sterker willen positioneren.",
     detail:
       "Een concreet plan voor betere positionering, consistente content en zichtbaarheid die bij je doelgroep past.",
     points: ["Contentplanning", "Doelgroep en aanbod", "Meer bereik"],
@@ -67,7 +91,7 @@ export const services = [
 
 export const portfolio = [
   {
-    title: "WZN flyer",
+    title: "WZN brand/flyer design",
     category: "Brand design",
     description:
       "Promotieposter in zwart, wit en goud met aanbod, positionering en CTA.",
@@ -127,42 +151,42 @@ export const portfolio = [
 export const pricing = [
   {
     title: "Starter Website",
-    price: "vanaf \u20ac249",
+    price: "Vanaf \u20ac299",
     audience:
-      "Voor starters, creators en kleine bedrijven die snel professioneel online willen.",
+      "Voor simpele professionele online aanwezigheid.",
     description:
-      "Een professionele basiswebsite of landingspagina voor een helder aanbod.",
-    points: ["One-page website", "Responsive design", "Social/contact CTA's"],
+      "Een professionele 1 pagina / landingpage voor een helder aanbod.",
+    points: ["1 pagina / landingpage", "Responsive design", "Social/contact CTA's"],
     popular: false,
   },
   {
     title: "Business Website",
-    price: "vanaf \u20ac499",
+    price: "Vanaf \u20ac899",
     audience:
-      "Voor bedrijven die diensten, portfolio en vertrouwen sterker willen presenteren.",
+      "Voor ondernemers die een serieuze website willen met meerdere pagina's.",
     description:
-      "Uitgebreidere site voor bedrijven die sterker online willen presenteren.",
-    points: ["Meerdere secties of pagina's", "SEO basis", "Portfolio of dienstenstructuur"],
+      "Een sterkere bedrijfswebsite voor diensten, vertrouwen en conversie.",
+    points: ["Meerdere pagina's", "SEO basis", "Portfolio of dienstenstructuur"],
     popular: true,
   },
   {
-    title: "Software/Webapp",
-    price: "vanaf \u20ac750",
+    title: "Software / Webapp",
+    price: "Vanaf \u20ac1250",
     audience:
-      "Voor maatwerk tools, dashboards, demo's en automatisering met echte functies.",
+      "Voor maatwerk tools, dashboards, AI tools of interactieve systemen.",
     description:
-      "Een maatwerk tool, webapp of demo die een concreet probleem oplost.",
-    points: ["Functioneel prototype", "Gebruikersflow", "Oplevering op maat"],
+      "Software die een concreet proces, idee of workflow bruikbaar maakt.",
+    points: ["Maatwerk functies", "Gebruikersflow", "Oplevering op maat"],
     popular: false,
   },
   {
     title: "Promotie Content",
-    price: "vanaf \u20ac99",
+    price: "Vanaf \u20ac149",
     audience:
-      "Voor acties, campagnes, social posts, flyers en visuele promotie.",
+      "Voor flyers, social posts, banners, korte visuals of promotiecontent.",
     description:
-      "Design, video of social content voor acties, campagnes en zichtbaarheid.",
-    points: ["Flyers of posts", "Promo visuals", "Format voor social media"],
+      "Visuele content voor acties, campagnes en online zichtbaarheid.",
+    points: ["Flyers of posts", "Promo visuals", "Social media formaat"],
     popular: false,
   },
 ];
@@ -181,9 +205,10 @@ export const process = [
   "Idee bespreken",
   "Plan maken",
   "Design/prototype",
-  "Bouwen/creëren",
+  "Bouwen of creëren",
   "Feedbackronde",
   "Oplevering",
+  "Website live zetten indien gewenst",
 ];
 
 export const processSteps = [
@@ -203,7 +228,7 @@ export const processSteps = [
       "Voor websites, tools en visuals maak ik een eerste richting zodat je vroeg kunt meekijken.",
   },
   {
-    title: "Bouwen/creëren",
+    title: "Bouwen of creëren",
     description:
       "Daarna werk ik het project uit in code, design, content of een combinatie daarvan.",
   },
@@ -216,5 +241,10 @@ export const processSteps = [
     title: "Oplevering",
     description:
       "Je krijgt een nette oplevering die klaar is om te gebruiken, delen of verder te laten groeien.",
+  },
+  {
+    title: "Website live zetten indien gewenst",
+    description:
+      "Als het om een website gaat, kan livegang, basiscontrole en domeinkoppeling worden meegenomen.",
   },
 ];

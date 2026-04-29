@@ -6,7 +6,7 @@ import SubPageHero from "../components/SubPageHero";
 export const metadata: Metadata = {
   title: "Werkwijze",
   description:
-    "Bekijk de werkwijze van WZN Production: idee bespreken, plan maken, design, bouwen, feedback en oplevering.",
+    "Bekijk de werkwijze van WZN Production: idee bespreken, plan maken, design/prototype, bouwen of creëren, feedback, oplevering en live zetten indien gewenst.",
 };
 
 export default function WerkwijzePage() {

@@ -13,17 +13,17 @@ export default function Hero() {
       <div className="hero-lines hero-lines-right" aria-hidden="true" />
       <div className="hero-edge-lines" aria-hidden="true" />
 
-      <div className="relative mx-auto flex min-h-[calc(82svh-3.5rem)] max-w-7xl flex-col justify-center px-4 py-14 sm:px-6 sm:py-16 lg:min-h-[calc(80svh-3.5rem)] lg:px-8">
+      <div className="relative mx-auto flex min-h-[calc(82svh-3.5rem)] max-w-7xl flex-col justify-center px-4 py-14 sm:px-6 sm:py-16 lg:min-h-[calc(78svh-3.5rem)] lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="hero-brandmark mx-auto">
-            <div className="hero-wzn">WZN</div>
-            <div className="hero-production">Production</div>
-            <div className="hero-slogan">Also Impossible is Possible</div>
-          </div>
-
-          <h1 className="mt-8 text-balance text-3xl font-semibold text-white sm:text-5xl">
-            Software. Content. Promotie. <span className="gold-sheen">Resultaat.</span>
+          <p className="mb-4 font-mono text-xs uppercase tracking-[0.28em] text-[#d7b46a]">
+            Premium creative / AI / software agency
+          </p>
+          <h1 className="text-balance text-4xl font-semibold text-white sm:text-6xl">
+            WZN <span className="gold-sheen">Production</span>
           </h1>
+          <h2 className="mt-6 text-balance text-3xl font-semibold text-white sm:text-5xl">
+            Software. Content. Promotie. <span className="gold-sheen">Resultaat.</span>
+          </h2>
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#d8d1c2] sm:text-lg">
             Ik help bedrijven, zzp&apos;ers en creators met websites, software, AI tools en
             promotiecontent die professioneel oogt en resultaat oplevert.
