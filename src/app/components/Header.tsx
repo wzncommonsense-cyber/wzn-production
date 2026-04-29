@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "../lib/site-data";
 
 const navItems = [
@@ -10,11 +11,19 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/78 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/82 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a href="#home" className="group flex items-center gap-3" aria-label="WZN Production home">
-          <span className="grid h-10 w-10 place-items-center rounded-md border border-[#d7b46a]/35 bg-[#d7b46a]/10 font-mono text-sm font-bold text-[#f0ce78] transition group-hover:border-[#f0ce78]">
-            WZN
+          <span className="relative h-11 w-24 overflow-hidden rounded-md border border-[#d7b46a]/25 bg-black shadow-[0_0_24px_rgba(215,180,106,0.12)] transition group-hover:border-[#f0ce78]">
+            <Image
+              src="/assets/wzn-logo-crop.png"
+              alt="WZN Production logo"
+              fill
+              sizes="96px"
+              className="object-cover"
+              priority
+              unoptimized
+            />
           </span>
           <span className="leading-tight">
             <span className="block text-sm font-semibold tracking-wide text-white">

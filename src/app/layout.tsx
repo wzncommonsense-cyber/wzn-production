@@ -43,6 +43,7 @@ export const metadata: Metadata = {
     description: siteDescription,
     url: "https://wznproduction.nl",
     siteName: "WZN Production",
+    images: ["/assets/wzn-brand-showcase.png"],
     locale: "nl_NL",
     type: "website",
   },

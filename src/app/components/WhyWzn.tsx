@@ -3,11 +3,11 @@ import { reasons } from "../lib/site-data";
 
 export default function WhyWzn() {
   return (
-    <section className="border-y border-white/10 bg-[#0b0b0b] px-4 py-20 sm:px-6 lg:px-8">
+    <section className="border-y border-white/10 bg-[#11100d] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Waarom WZN Production"
-          title="Creatie, techniek en promotie onder één duidelijke lijn."
+          title="Creatie, techniek en promotie onder een duidelijke lijn."
           description="Je krijgt geen losse onderdelen, maar werk dat bij elkaar past en gericht is op resultaat."
         />
 

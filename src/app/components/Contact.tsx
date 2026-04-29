@@ -20,7 +20,7 @@ const contactLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-4 pb-20 pt-10 sm:px-6 lg:px-8">
+    <section id="contact" className="bg-[#090806] px-4 py-20 sm:px-6 lg:px-8">
       <div className="reveal mx-auto max-w-7xl overflow-hidden rounded-xl border border-[#d7b46a]/22 bg-[#0d0d0d]">
         <div className="grid gap-0 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="p-6 sm:p-10 lg:p-12">
@@ -28,11 +28,10 @@ export default function Contact() {
               Contact
             </p>
             <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Klaar om jouw idee professioneel neer te zetten?
+              Klaar om iets gaafs te bouwen?
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[#b9b0a1]">
-              Stuur een bericht via Instagram, TikTok of mail. Geen nepformulier, gewoon direct
-              contact met de plek waar jij al actief bent.
+              Stuur mij een bericht met jouw idee, project of campagne.
             </p>
           </div>
 
