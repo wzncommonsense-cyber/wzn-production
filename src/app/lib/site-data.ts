@@ -70,7 +70,7 @@ export const services = [
     fit:
       "Geschikt voor events, online campagnes, productpromoties en social updates.",
     detail:
-      "Visueel materiaal voor acties, lanceringen, events en aanbiedingen met een premium WZN-afwerking.",
+      "Visueel materiaal voor acties, lanceringen, events en aanbiedingen met een premium WZN Production-afwerking.",
     points: ["Flyers", "Banners", "Instagram/TikTok posts"],
     icon: "design",
   },
@@ -91,7 +91,7 @@ export const services = [
 
 export const portfolio = [
   {
-    title: "WZN brand/flyer design",
+    title: "WZN Production brand/flyer design",
     category: "Brand design",
     description:
       "Promotieposter in zwart, wit en goud met aanbod, positionering en CTA.",
@@ -99,7 +99,7 @@ export const portfolio = [
     imageAlt: "WZN Production promotie flyer",
   },
   {
-    title: "WZN banner",
+    title: "WZN Production banner",
     category: "Creative agency visual",
     description:
       "Merkvisual voor software, promotie, AI en online zichtbaarheid.",

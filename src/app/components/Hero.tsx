@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="hero-lines hero-lines-right" aria-hidden="true" />
       <div className="hero-edge-lines" aria-hidden="true" />
 
-      <div className="relative mx-auto flex min-h-[calc(82svh-3.5rem)] max-w-7xl flex-col justify-center px-4 py-14 sm:px-6 sm:py-16 lg:min-h-[calc(78svh-3.5rem)] lg:px-8">
+      <div className="relative mx-auto flex min-h-[calc(74svh-3.5rem)] max-w-7xl flex-col justify-center px-4 py-10 sm:px-6 sm:py-12 lg:min-h-[calc(70svh-3.5rem)] lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.28em] text-[#d7b46a]">
             Premium creative / AI / software agency

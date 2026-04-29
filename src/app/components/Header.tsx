@@ -19,15 +19,15 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#d7b46a]/10 bg-black/82 backdrop-blur-2xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-1.5 sm:px-6 lg:px-8">
         <Link href="/" className="group flex min-w-0 items-center" aria-label="WZN Production home">
-          <span className="relative h-12 w-[132px] shrink-0 overflow-hidden rounded-lg border border-[#d7b46a]/35 bg-black p-1.5 shadow-[0_0_30px_rgba(215,180,106,0.16)] transition group-hover:border-[#f0ce78] group-hover:shadow-[0_0_36px_rgba(215,180,106,0.22)]">
+          <span className="relative h-10 w-[116px] shrink-0 overflow-hidden rounded-md border border-[#d7b46a]/32 bg-black p-1 shadow-[0_0_24px_rgba(215,180,106,0.14)] transition group-hover:border-[#f0ce78] group-hover:shadow-[0_0_30px_rgba(215,180,106,0.2)]">
             <Image
               src="/assets/wzn-logo-crop.png"
               alt="WZN Production logo"
               fill
-              sizes="132px"
-              className="object-contain p-1"
+              sizes="116px"
+              className="object-contain p-0.5"
               priority
               unoptimized
             />

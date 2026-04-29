@@ -14,7 +14,7 @@ export default function PortfolioPage() {
     <PageFrame>
       <SubPageHero
         eyebrow="Portfolio"
-        title="Projecten, visuals en concepten met WZN-uitstraling."
+        title="Projecten, visuals en concepten in de stijl van WZN Production."
         description="Een overzicht van promotiebeelden, softwareconcepten, AI branding, webapps en visuele productie."
       />
       <Portfolio />
