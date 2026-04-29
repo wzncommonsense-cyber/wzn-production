@@ -68,6 +68,121 @@ button {
   background-size: 42px 42px;
 }
 
+.hero-stage {
+  background:
+    linear-gradient(180deg, rgba(215, 180, 106, 0.08), transparent 28rem),
+    radial-gradient(ellipse at center 45%, rgba(215, 180, 106, 0.12), transparent 42%),
+    #050505;
+}
+
+.hero-stage::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(215, 180, 106, 0.55), transparent);
+}
+
+.hero-lines {
+  position: absolute;
+  top: 16%;
+  width: 42rem;
+  height: 22rem;
+  pointer-events: none;
+  opacity: 0.55;
+  background:
+    repeating-linear-gradient(170deg, transparent 0 14px, rgba(215, 180, 106, 0.28) 15px, transparent 16px 28px),
+    linear-gradient(90deg, transparent, rgba(240, 206, 120, 0.3), transparent);
+  filter: drop-shadow(0 0 18px rgba(215, 180, 106, 0.35));
+  mask-image: radial-gradient(ellipse at center, #000 0%, transparent 66%);
+}
+
+.hero-lines-left {
+  left: -19rem;
+  transform: rotate(-12deg) skewX(-10deg);
+}
+
+.hero-lines-right {
+  right: -20rem;
+  transform: rotate(12deg) skewX(10deg);
+}
+
+.hero-edge-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(102deg, transparent 0 78%, rgba(215, 180, 106, 0.22) 78.1%, transparent 78.4%),
+    linear-gradient(108deg, transparent 0 85%, rgba(240, 206, 120, 0.18) 85.1%, transparent 85.35%),
+    linear-gradient(180deg, transparent 0 88%, rgba(215, 180, 106, 0.12) 88.1%, transparent 88.35%);
+}
+
+.hero-brandmark {
+  width: min(100%, 46rem);
+  padding: 1.5rem 1rem 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 36px rgba(255, 255, 255, 0.08);
+}
+
+.hero-wzn {
+  font-size: 4.6rem;
+  font-weight: 900;
+  line-height: 0.78;
+  letter-spacing: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #d6d6d6 42%, #8e8e8e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.hero-production {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  background: linear-gradient(90deg, #d7b46a, #f0ce78 45%, #9a742e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.hero-slogan {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  color: #fff2cf;
+}
+
+@media (min-width: 640px) {
+  .hero-wzn {
+    font-size: 7rem;
+  }
+
+  .hero-production {
+    font-size: 2.9rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-wzn {
+    font-size: 9rem;
+  }
+
+  .hero-production {
+    font-size: 3.6rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.45rem;
+  }
+}
+
 .premium-glass {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background:

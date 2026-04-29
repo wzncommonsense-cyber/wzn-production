@@ -11,25 +11,19 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/78 backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 border-b border-[#d7b46a]/10 bg-black/82 backdrop-blur-2xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8">
-        <a href="#home" className="group flex min-w-0 items-center gap-2.5" aria-label="WZN Production home">
-          <span className="relative h-9 w-[78px] shrink-0 overflow-hidden rounded border border-[#d7b46a]/22 bg-black shadow-[0_0_22px_rgba(215,180,106,0.1)] transition group-hover:border-[#f0ce78]">
+        <a href="#home" className="group flex min-w-0 items-center" aria-label="WZN Production home">
+          <span className="relative h-10 w-[108px] shrink-0 overflow-hidden rounded-md border border-[#d7b46a]/24 bg-black shadow-[0_0_22px_rgba(215,180,106,0.1)] transition group-hover:border-[#f0ce78]">
             <Image
               src="/assets/wzn-logo-crop.png"
               alt="WZN Production logo"
               fill
-              sizes="78px"
+              sizes="108px"
               className="object-cover"
               priority
               unoptimized
             />
-          </span>
-          <span className="hidden leading-tight sm:block">
-            <span className="block text-sm font-semibold tracking-[0.01em] text-white">
-              {site.name}
-            </span>
-            <span className="text-[11px] text-[#a99f8f]">{site.slogan}</span>
           </span>
         </a>
 
