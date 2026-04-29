@@ -1,0 +1,13 @@
+# Local dependencies and build output
+node_modules
+.next
+out
+build
+coverage
+
+# Local configuration and logs
+.git
+.vercel
+.env*
+*.log
+*.tmp
