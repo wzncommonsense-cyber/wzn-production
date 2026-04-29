@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const serviceLabels = ["Websites", "AI tools", "Promotie", "Flyers", "Content", "Resultaat"];
 
 export default function Hero() {
@@ -28,24 +30,24 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href="#diensten"
+            <Link
+              href="/diensten"
               className="rounded-full bg-[#d7b46a] px-6 py-3 text-center text-sm font-bold text-black shadow-[0_0_34px_rgba(215,180,106,0.22)] transition hover:-translate-y-0.5 hover:bg-[#f0ce78] hover:shadow-[0_0_42px_rgba(215,180,106,0.34)] focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black"
             >
               Bekijk diensten
-            </a>
-            <a
-              href="#prijzen"
+            </Link>
+            <Link
+              href="/prijzen"
               className="rounded-full border border-white/14 bg-white/[0.045] px-6 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-[#d7b46a]/45 hover:text-[#f0ce78] focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black"
             >
               Bekijk prijzen
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="rounded-full border border-[#d7b46a]/35 bg-[#d7b46a]/10 px-6 py-3 text-center text-sm font-semibold text-[#f0ce78] transition hover:-translate-y-0.5 hover:bg-[#d7b46a] hover:text-black focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black"
             >
               Start project
-            </a>
+            </Link>
           </div>
 
           <div className="mx-auto mt-7 flex max-w-4xl flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-[#d8d1c2]">

@@ -1,5 +1,5 @@
 import SectionHeading from "./SectionHeading";
-import { process } from "../lib/site-data";
+import { processSteps } from "../lib/site-data";
 
 export default function Process() {
   return (
@@ -12,19 +12,16 @@ export default function Process() {
         />
 
         <div className="grid gap-4 md:grid-cols-3">
-          {process.map((step, index) => (
+          {processSteps.map((step, index) => (
             <article
-              key={step}
+              key={step.title}
               className="reveal rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur transition hover:-translate-y-1.5 hover:border-[#d7b46a]/45 hover:bg-white/[0.055]"
             >
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#d7b46a]">
                 Stap {index + 1}
               </p>
-              <h3 className="mt-5 text-xl font-semibold text-white">{step}</h3>
-              <p className="mt-3 leading-7 text-[#b9b0a1]">
-                We houden het proces overzichtelijk, zodat je steeds weet wat er gebeurt en
-                waar we naartoe werken.
-              </p>
+              <h3 className="mt-5 text-xl font-semibold text-white">{step.title}</h3>
+              <p className="mt-3 leading-7 text-[#b9b0a1]">{step.description}</p>
             </article>
           ))}
         </div>

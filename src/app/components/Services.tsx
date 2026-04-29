@@ -24,6 +24,15 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-semibold text-white">{service.title}</h3>
               <p className="mt-3 text-sm leading-7 text-[#b9b0a1]">{service.description}</p>
+              <p className="mt-4 text-sm leading-7 text-[#d8d1c2]">{service.detail}</p>
+              <ul className="mt-5 space-y-2 text-sm text-[#b9b0a1]">
+                {service.points.map((point) => (
+                  <li key={point} className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d7b46a]" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>

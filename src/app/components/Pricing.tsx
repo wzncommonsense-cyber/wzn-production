@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 import { pricing } from "../lib/site-data";
 
@@ -32,6 +33,7 @@ export default function Pricing() {
 
               <h3 className="text-xl font-semibold text-white">{item.title}</h3>
               <p className="mt-4 text-3xl font-bold text-[#f0ce78]">{item.price}</p>
+              <p className="mt-4 text-sm leading-7 text-[#b9b0a1]">{item.description}</p>
 
               <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#d7b46a]">
                 Voor wie
@@ -50,8 +52,8 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className={`mt-auto rounded-full px-4 py-3 text-center text-sm font-semibold transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black ${
                   item.popular
                     ? "bg-[#d7b46a] text-black hover:bg-[#f0ce78]"
@@ -59,7 +61,7 @@ export default function Pricing() {
                 }`}
               >
                 Vraag project aan
-              </a>
+              </Link>
             </article>
           ))}
         </div>
