@@ -3,8 +3,9 @@ import { process } from "../lib/site-data";
 
 export default function Process() {
   return (
-    <section id="werkwijze" className="bg-[#070707] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-      <div className="mx-auto max-w-7xl">
+    <section id="werkwijze" className="relative overflow-hidden bg-[#0a0908] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/12 to-transparent" aria-hidden="true" />
+      <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Werkwijze"
           title="Van idee naar iets dat klaar is om gebruikt of gedeeld te worden."
@@ -14,7 +15,7 @@ export default function Process() {
           {process.map((step, index) => (
             <article
               key={step}
-              className="reveal rounded-lg border border-white/10 bg-[#101010] p-6 transition hover:-translate-y-1 hover:border-[#d7b46a]/45"
+              className="reveal rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur transition hover:-translate-y-1.5 hover:border-[#d7b46a]/45 hover:bg-white/[0.055]"
             >
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#d7b46a]">
                 Stap {index + 1}

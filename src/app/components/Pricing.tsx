@@ -3,11 +3,12 @@ import { pricing } from "../lib/site-data";
 
 export default function Pricing() {
   return (
-    <section id="prijzen" className="bg-[#050505] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-      <div className="mx-auto max-w-7xl">
+    <section id="prijzen" className="relative overflow-hidden bg-[#0a0908] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div className="ambient-gold-top absolute inset-x-0 top-0 h-48" aria-hidden="true" />
+      <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Prijzen"
-          title="Pakketten met een helder startpunt."
+          title="Heldere vanaf-prijzen voor professioneel werk."
           description="Vanaf-prijzen. Na korte intake krijg je een vaste prijs op basis van functies, designniveau en gewenste oplevering."
         />
 
@@ -15,28 +16,47 @@ export default function Pricing() {
           {pricing.map((item) => (
             <article
               key={item.title}
-              className="reveal flex flex-col rounded-lg border border-white/10 bg-[#101010] p-6 transition hover:-translate-y-1 hover:border-[#d7b46a]/45"
+              className={`reveal relative flex min-h-[460px] flex-col rounded-2xl border p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:-translate-y-1.5 ${
+                item.popular
+                  ? "border-[#d7b46a]/55 bg-[#d7b46a]/10 shadow-[0_24px_90px_rgba(215,180,106,0.12)]"
+                  : "border-white/10 bg-white/[0.035] hover:border-[#d7b46a]/40 hover:bg-white/[0.055]"
+              }`}
             >
+              {item.popular ? (
+                <span className="mb-5 w-fit rounded-full bg-[#d7b46a] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-black">
+                  Meest gekozen
+                </span>
+              ) : (
+                <span className="mb-5 h-6" aria-hidden="true" />
+              )}
+
               <h3 className="text-xl font-semibold text-white">{item.title}</h3>
               <p className="mt-4 text-3xl font-bold text-[#f0ce78]">{item.price}</p>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.16em] text-[#d7b46a]">
+
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#d7b46a]">
                 Voor wie
               </p>
-              <p className="mt-2 min-h-24 leading-7 text-[#b9b0a1]">{item.audience}</p>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.16em] text-[#d7b46a]">
+              <p className="mt-2 text-sm leading-7 text-[#cfc7b6]">{item.audience}</p>
+
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#d7b46a]">
                 Inbegrepen
               </p>
               <ul className="mt-4 space-y-3 text-sm text-[#d8d1c2]">
                 {item.points.map((point) => (
                   <li key={point} className="flex gap-3">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d7b46a]" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d7b46a]" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
+
               <a
                 href="#contact"
-                className="mt-7 rounded-md border border-[#d7b46a]/35 bg-[#d7b46a]/10 px-4 py-3 text-center text-sm font-semibold text-[#f0ce78] transition hover:-translate-y-0.5 hover:bg-[#d7b46a] hover:text-black"
+                className={`mt-auto rounded-full px-4 py-3 text-center text-sm font-semibold transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black ${
+                  item.popular
+                    ? "bg-[#d7b46a] text-black hover:bg-[#f0ce78]"
+                    : "border border-[#d7b46a]/35 bg-[#d7b46a]/10 text-[#f0ce78] hover:bg-[#d7b46a] hover:text-black"
+                }`}
               >
                 Vraag project aan
               </a>
@@ -44,8 +64,8 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="reveal mx-auto mt-8 max-w-4xl rounded-lg border border-[#d7b46a]/20 bg-[#d7b46a]/10 p-5 text-center leading-7 text-[#efe4c7]">
-          Vanaf-prijzen. Na korte intake krijg je een vaste prijs op basis van functies,
+        <p className="reveal mx-auto mt-8 max-w-4xl rounded-2xl border border-[#d7b46a]/18 bg-white/[0.035] p-5 text-center text-sm leading-7 text-[#efe4c7] backdrop-blur">
+          Elke opdracht is anders. De prijs hangt af van functies, hoeveelheid pagina&apos;s,
           designniveau en gewenste oplevering.
         </p>
       </div>

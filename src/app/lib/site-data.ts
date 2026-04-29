@@ -12,63 +12,71 @@ export const services = [
   {
     title: "Websites & webapps",
     description:
-      "Professionele websites, landingspagina's en webapps die jouw aanbod strak presenteren.",
+      "Strakke sites en webapps die jouw aanbod professioneel laten landen.",
     icon: "layout",
   },
   {
     title: "Software op maat",
     description:
-      "Tools, dashboards en applicaties die passen bij jouw workflow en doelen.",
+      "Dashboards, tools en applicaties die passen bij jouw workflow.",
     icon: "code",
   },
   {
     title: "AI tools & automatisering",
     description:
-      "Praktische AI-oplossingen die tijd besparen, processen versimpelen en output versnellen.",
+      "Slimme workflows die tijd besparen en output versnellen.",
     icon: "automation",
   },
   {
-    title: "Reclamevideo's & promotiecontent",
+    title: "Promotiecontent",
     description:
-      "Korte, duidelijke content voor aandacht, vertrouwen en conversie op social media.",
+      "Korte video's en visuals voor aandacht, vertrouwen en actie.",
     icon: "video",
   },
   {
-    title: "Flyers, banners & social posts",
+    title: "Flyers & social posts",
     description:
-      "Visueel werk dat professioneel voelt en past bij je merk, actie of campagne.",
+      "Campagnemateriaal dat strak voelt en past bij jouw merk.",
     icon: "design",
   },
   {
     title: "Contentstrategie",
     description:
-      "Een concreet plan voor betere positionering, consistenter posten en meer online zichtbaarheid.",
+      "Een duidelijke lijn voor zichtbaarheid, planning en groei.",
     icon: "strategy",
   },
 ];
 
 export const portfolio = [
   {
-    title: "WZN flyer / promotie design",
+    title: "WZN flyer",
     category: "Brand design",
     description:
-      "Premium promotieposter in zwart, wit en goud met diensten, aanbod en duidelijke CTA.",
+      "Promotieposter in zwart, wit en goud met aanbod, positionering en CTA.",
     image: "/assets/wzn-flyer.png",
     imageAlt: "WZN Production promotie flyer",
   },
   {
-    title: "WZN brand banner",
+    title: "WZN banner",
     category: "Creative agency visual",
     description:
-      "Complete merkvisual voor software, reclame, promotie en online zichtbaarheid.",
+      "Merkvisual voor software, promotie, AI en online zichtbaarheid.",
     image: "/assets/wzn-brand-showcase.png",
     imageAlt: "WZN Production brand showcase",
   },
   {
-    title: "Tamagotchi demo app",
+    title: "AI Mail Assistant logo",
+    category: "AI / automation",
+    description:
+      "Brandconcept voor een slimme mail-assistent met zakelijke AI-uitstraling.",
+    image: null,
+    imageAlt: "AI Mail Assistant brand concept",
+  },
+  {
+    title: "Tamagotchi demo",
     category: "Software concept",
     description:
-      "Interactieve demo met karakterlogica, status, animatie en een speelse gebruikerservaring.",
+      "Interactieve demo met karakterlogica, status, animatie en speelse UX.",
     image: "/assets/tamagotchi-demo.png",
     imageAlt: "Tamagotchi demo app voorbeeld",
   },
@@ -76,33 +84,9 @@ export const portfolio = [
     title: "HBO Study trainer",
     category: "Webapp / learning tool",
     description:
-      "Trainingswebsite met oefenvragen, pakketten, heldere CTA's en scoregerichte interface.",
+      "Trainingswebsite met oefenvragen, pakketten en scoregerichte interface.",
     image: "/assets/hbo-study-hero.png",
     imageAlt: "HBO Study Trainer website",
-  },
-  {
-    title: "Anime intro",
-    category: "Video / visual",
-    description:
-      "Anime-stijl intro met donkere sfeer, motion prompts en visuele productie-workflow.",
-    image: "/assets/anime-intro.png",
-    imageAlt: "Anime intro montage in Filmora",
-  },
-  {
-    title: "AI Mail Assistant logo",
-    category: "AI / automation",
-    description:
-      "Merkconcept voor een slimme mail-assistent met automatisering en zakelijke uitstraling.",
-    image: null,
-    imageAlt: "AI Mail Assistant brand concept",
-  },
-  {
-    title: "AI Store Dashboard Demo",
-    category: "AI dashboard",
-    description:
-      "Demo-dashboard dat klantgedrag analyseert en automatisch promotieadvies toont.",
-    image: "/assets/ai-dashboard-demo.png",
-    imageAlt: "AI store dashboard demo",
   },
 ];
 
@@ -115,6 +99,7 @@ export const pricing = [
     description:
       "Een professionele basiswebsite of landingspagina voor een helder aanbod.",
     points: ["One-page website", "Responsive design", "Social/contact CTA's"],
+    popular: false,
   },
   {
     title: "Business Website",
@@ -124,15 +109,17 @@ export const pricing = [
     description:
       "Uitgebreidere site voor bedrijven die sterker online willen presenteren.",
     points: ["Meerdere secties of pagina's", "SEO basis", "Portfolio of dienstenstructuur"],
+    popular: true,
   },
   {
-    title: "Software / Webapp",
+    title: "Software/Webapp",
     price: "vanaf \u20ac750",
     audience:
       "Voor maatwerk tools, dashboards, demo's en automatisering met echte functies.",
     description:
       "Een maatwerk tool, webapp of demo die een concreet probleem oplost.",
     points: ["Functioneel prototype", "Gebruikersflow", "Oplevering op maat"],
+    popular: false,
   },
   {
     title: "Promotie Content",
@@ -142,6 +129,7 @@ export const pricing = [
     description:
       "Design, video of social content voor acties, campagnes en zichtbaarheid.",
     points: ["Flyers of posts", "Promo visuals", "Format voor social media"],
+    popular: false,
   },
 ];
 
