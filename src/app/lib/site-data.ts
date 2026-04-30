@@ -152,41 +152,73 @@ export const pricing = [
   {
     title: "Starter Website",
     price: "Vanaf \u20ac299",
-    audience:
-      "Voor simpele professionele online aanwezigheid.",
-    description:
-      "Een professionele 1 pagina / landingpage voor een helder aanbod.",
-    points: ["1 pagina / landingpage", "Responsive design", "Social/contact CTA's"],
+    description: "Professionele landingspagina voor snelle online aanwezigheid",
+    highlights: ["1 pagina website", "Modern design", "Snelle oplevering"],
+    included: [
+      "1 landingspagina voor desktop en mobiel",
+      "Call-to-actions voor contact of offerte",
+      "Basis SEO setup met nette titels en structuur",
+    ],
+    delivery: ["1-3 dagen", "Inclusief live zetten op Vercel"],
+    audience: ["ZZP'ers", "Starters", "Kleine ondernemers"],
+    excluded: ["Grote revisies", "Custom systemen", "Complexe backend functies"],
+    result:
+      "Snel professioneel online zichtbaar met een pagina die duidelijk maakt wat je aanbiedt en hoe mensen contact opnemen.",
+    cta: "Start jouw project",
     popular: false,
   },
   {
     title: "Business Website",
     price: "Vanaf \u20ac899",
-    audience:
-      "Voor ondernemers die een serieuze website willen met meerdere pagina's.",
-    description:
-      "Een sterkere bedrijfswebsite voor diensten, vertrouwen en conversie.",
-    points: ["Meerdere pagina's", "SEO basis", "Portfolio of dienstenstructuur"],
+    description: "Sterke website voor bedrijven die willen groeien",
+    highlights: ["Meerdere pagina's", "SEO basis", "Professioneel design"],
+    included: [
+      "Meerdere pagina's met duidelijke structuur",
+      "Diensten- en portfolio-opbouw",
+      "Conversiegericht design met sterke contactmomenten",
+    ],
+    delivery: ["3-7 dagen", "Deploy en domeinkoppeling mogelijk"],
+    audience: ["Bedrijven", "Serieuze projecten", "Ondernemers die vertrouwen willen opbouwen"],
+    excluded: ["Complexe backend systemen", "Betaalintegraties", "Grote hoeveelheden content"],
+    result:
+      "Een complete bedrijfswebsite die vertrouwen opbouwt en bezoekers beter richting contact of aanvraag stuurt.",
+    cta: "Start jouw project",
     popular: true,
   },
   {
     title: "Software / Webapp",
     price: "Vanaf \u20ac1250",
-    audience:
-      "Voor maatwerk tools, dashboards, AI tools of interactieve systemen.",
-    description:
-      "Software die een concreet proces, idee of workflow bruikbaar maakt.",
-    points: ["Maatwerk functies", "Gebruikersflow", "Oplevering op maat"],
+    description: "Maatwerk tools en interactieve systemen",
+    highlights: ["Custom functionaliteit", "Gebruikersflow", "Schaalbaar"],
+    included: [
+      "Werkend prototype, dashboard of tool",
+      "Logica, interactie en gebruikersflow",
+      "UI design passend bij het doel van de webapp",
+    ],
+    delivery: ["In overleg", "Testen en oplevering inbegrepen"],
+    audience: ["Bedrijven met specifieke wensen", "Dashboards", "AI tools of interne systemen"],
+    excluded: ["Grote enterprise systemen", "Uitgebreide backend platformen", "Complexe rechtenstructuren"],
+    result:
+      "Een werkende digitale oplossing die tijd kan besparen, processen versimpelt of een idee omzet naar een bruikbaar systeem.",
+    cta: "Start jouw project",
     popular: false,
   },
   {
     title: "Promotie Content",
     price: "Vanaf \u20ac149",
-    audience:
-      "Voor flyers, social posts, banners, korte visuals of promotiecontent.",
-    description:
-      "Visuele content voor acties, campagnes en online zichtbaarheid.",
-    points: ["Flyers of posts", "Promo visuals", "Social media formaat"],
+    description: "Visuele content die bereik en resultaat oplevert",
+    highlights: ["Social content", "Design / visuals", "Snel geleverd"],
+    included: [
+      "Posts, visuals, flyer of banner",
+      "Branding stijl passend bij jouw merk",
+      "Social media formaat klaar om te plaatsen",
+    ],
+    delivery: ["1-2 dagen", "Extra varianten mogelijk tegen meerprijs"],
+    audience: ["Social media", "Marketing", "Creators en ondernemers"],
+    excluded: ["Grote campagnes", "Lange videoseries", "Uitgebreide contentstrategie"],
+    result:
+      "Professioneel promotiemateriaal dat direct gebruikt kan worden voor online zichtbaarheid, acties of campagnes.",
+    cta: "Start jouw project",
     popular: false,
   },
 ];

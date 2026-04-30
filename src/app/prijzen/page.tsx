@@ -6,7 +6,7 @@ import SubPageHero from "../components/SubPageHero";
 export const metadata: Metadata = {
   title: "Prijzen",
   description:
-    "Bekijk de vanaf-prijzen van WZN Production: Starter Website vanaf 299 euro, Business Website vanaf 899 euro, Software/Webapp vanaf 1250 euro en Promotie Content vanaf 149 euro.",
+    "Bekijk de interactieve pakketten van WZN Production: Starter Website, Business Website, Software/Webapp en Promotie Content met duidelijke oplevering en vanaf-prijzen.",
 };
 
 export default function PrijzenPage() {
@@ -14,8 +14,8 @@ export default function PrijzenPage() {
     <PageFrame>
       <SubPageHero
         eyebrow="Prijzen"
-        title="Duidelijke pakketten met ruimte voor maatwerk."
-        description="Alle prijzen zijn vanaf-prijzen. Na een korte intake krijg je een vaste prijs op basis van functies, designniveau, aantal pagina's en gewenste oplevering."
+        title="High-end pakketten voor websites, software en promotie."
+        description="Bekijk wat je krijgt, voor wie elk pakket geschikt is en welke oplevering je kunt verwachten."
       />
       <Pricing />
     </PageFrame>
