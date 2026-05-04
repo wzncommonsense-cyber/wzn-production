@@ -6,16 +6,16 @@ import SectionHeading from "./SectionHeading";
 import { pricing, site } from "../lib/site-data";
 
 const pricingHighlights = [
-  "Tijdelijke korting voor eerste klanten",
-  "Professionele bedrijfsuitstraling",
-  "Mobielvriendelijk ontwerp",
-  "Domein koppelen mogelijk",
+  "Snelle oplevering mogelijk",
+  "AI-ondersteunde ontwikkeling",
+  "Mobiel & desktop geoptimaliseerd",
+  "Live zetten en domeinkoppeling mogelijk",
 ];
 
 function CheckMark() {
   return (
     <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-[#d7b46a]/45 bg-[#d7b46a]/10 text-[11px] font-bold text-[#f0ce78]">
-      +
+      ✓
     </span>
   );
 }
@@ -43,23 +43,16 @@ export default function Pricing() {
   const [openPackage, setOpenPackage] = useState<string | null>(preferredPackage);
 
   return (
-    <section
-      id="prijzen"
-      className="relative overflow-hidden bg-[#0a0908] px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
-    >
+    <section id="prijzen" className="relative overflow-hidden bg-[#0a0908] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="ambient-gold-top absolute inset-x-0 top-0 h-48" aria-hidden="true" />
       <div className="ambient-gold-bottom absolute inset-x-0 bottom-0 h-64" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading
-          eyebrow="Tijdelijke introductiekorting"
-          title="Professionele websites en AI-demo's voor een scherpe startprijs."
-          description="Omdat WZN Production net is gestart, bied ik tijdelijk scherpe startersprijzen aan voor de eerste klanten. Zo kun jij professioneel online zichtbaar worden voor een lagere prijs, terwijl WZN Production verder groeit met echte klantprojecten."
+          eyebrow="Prijzen"
+          title="Transparante pakketten. Duidelijke oplevering."
+          description="Elke opdracht is anders. Daarom werk ik met vanaf-prijzen. Na een korte intake krijg je een vaste prijs op basis van jouw wensen, aantal pagina's, functies, designniveau en gewenste oplevering."
         />
-
-        <div className="reveal mx-auto mb-8 max-w-3xl rounded-2xl border border-[#d7b46a]/22 bg-[#d7b46a]/10 p-5 text-center text-sm leading-7 text-[#efe4c7] shadow-[0_18px_80px_rgba(215,180,106,0.08)] backdrop-blur">
-          De kwaliteit blijft professioneel, alleen de prijs is tijdelijk lager.
-        </div>
 
         <div className="reveal mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {pricingHighlights.map((highlight) => (
@@ -73,7 +66,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="grid items-start gap-5 lg:grid-cols-3">
+        <div className="grid items-start gap-5 lg:grid-cols-4">
           {pricing.map((item) => {
             const isOpen = openPackage === item.title;
             const cardIsHighlighted = item.popular || isOpen;
@@ -82,9 +75,9 @@ export default function Pricing() {
               <article
                 key={item.title}
                 onClick={() => setOpenPackage(isOpen ? null : item.title)}
-                className={`reveal group relative flex cursor-pointer flex-col overflow-hidden rounded-3xl border p-5 shadow-xl shadow-black/20 backdrop-blur transition duration-300 hover:scale-[1.03] sm:p-6 ${
+                className={`reveal group relative flex cursor-pointer flex-col overflow-hidden rounded-3xl border p-5 shadow-xl shadow-black/20 backdrop-blur transition duration-300 hover:scale-[1.03] ${
                   cardIsHighlighted
-                    ? "border-[#d7b46a]/70 bg-[#d7b46a]/10 shadow-[0_30px_120px_rgba(215,180,106,0.18)]"
+                    ? "border-[#d7b46a]/65 bg-[#d7b46a]/10 shadow-[0_28px_110px_rgba(215,180,106,0.16)]"
                     : "border-white/10 bg-white/[0.035] hover:border-[#d7b46a]/45 hover:bg-white/[0.055] hover:shadow-[0_22px_90px_rgba(215,180,106,0.11)]"
                 }`}
               >
@@ -95,36 +88,22 @@ export default function Pricing() {
                   aria-hidden="true"
                 />
 
-                <div className="flex min-h-[390px] flex-col">
-                  <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-                    <span
-                      className={`rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] ${
-                        item.popular
-                          ? "border border-[#d7b46a]/35 bg-[#d7b46a]/10 text-[#f0ce78]"
-                          : "border border-[#d7b46a]/28 bg-[#d7b46a]/10 text-[#f0ce78]"
-                      }`}
-                    >
-                      {item.badge}
-                    </span>
-
+                <div className="flex min-h-[335px] flex-col">
+                  <div className="mb-4 flex items-center justify-between gap-3">
                     {item.popular ? (
                       <span className="rounded-full bg-[#d7b46a] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-black">
                         Meest gekozen
                       </span>
                     ) : (
-                      <span className="text-xs text-[#d7b46a]">{isOpen ? "Open" : "Details"}</span>
+                      <span className="rounded-full border border-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#b9b0a1]">
+                        Pakket
+                      </span>
                     )}
+                    <span className="text-xs text-[#d7b46a]">{isOpen ? "Open" : "Details"}</span>
                   </div>
 
-                  <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
-                  <div className="mt-5">
-                    <p className="text-sm font-semibold text-[#8f8879] line-through decoration-[#d7b46a]/65 decoration-2">
-                      {item.oldPrice}
-                    </p>
-                    <p className="mt-1 text-4xl font-black tracking-tight text-[#f0ce78] md:text-5xl">
-                      {item.currentPrice}
-                    </p>
-                  </div>
+                  <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-4 text-3xl font-bold text-[#f0ce78]">{item.price}</p>
                   <p className="mt-4 text-sm leading-7 text-[#b9b0a1]">{item.description}</p>
 
                   <ul className="mt-6 space-y-3 text-sm text-[#efe4c7]">
@@ -151,18 +130,6 @@ export default function Pricing() {
                   >
                     {isOpen ? "Details sluiten" : "Bekijk details"}
                   </button>
-
-                  <Link
-                    href="/contact"
-                    onClick={(event) => event.stopPropagation()}
-                    className={`mt-3 flex w-full items-center justify-center rounded-full px-4 py-3 text-center text-sm font-semibold transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black ${
-                      cardIsHighlighted
-                        ? "border border-[#d7b46a]/45 bg-black/25 text-[#f0ce78] hover:bg-white/[0.08]"
-                        : "border border-white/10 bg-white/[0.035] text-white hover:border-[#d7b46a]/45 hover:text-[#f0ce78]"
-                    }`}
-                  >
-                    {item.cta}
-                  </Link>
                 </div>
 
                 <div
@@ -189,7 +156,7 @@ export default function Pricing() {
                         onClick={(event) => event.stopPropagation()}
                         className="flex w-full items-center justify-center rounded-full bg-[#d7b46a] px-4 py-3 text-sm font-semibold text-black transition hover:-translate-y-0.5 hover:bg-[#f0ce78] focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black"
                       >
-                        Stuur bericht
+                        {item.cta}
                       </Link>
                     </div>
                   </div>
@@ -199,27 +166,23 @@ export default function Pricing() {
           })}
         </div>
 
-        <div className="reveal mt-6 rounded-2xl border border-[#d7b46a]/24 bg-black/30 p-5 text-sm leading-7 text-[#efe4c7] backdrop-blur">
-          <strong className="text-white">Let op:</strong> deze prijzen gelden tijdelijk en alleen
-          voor de eerste klanten. Na deze introductieperiode gaan de prijzen terug naar het normale tarief.
-        </div>
-
         <div className="mt-8 grid gap-5 lg:grid-cols-3">
           <div className="reveal rounded-2xl border border-[#d7b46a]/18 bg-white/[0.035] p-6 backdrop-blur lg:col-span-2">
-            <p className="text-xl font-semibold text-white">Wat betekent introductieprijs?</p>
+            <p className="text-xl font-semibold text-white">Wat betekent &ldquo;vanaf&rdquo;?</p>
             <p className="mt-4 text-sm leading-7 text-[#cfc7b6]">
-              De introductieprijs is bedoeld als tijdelijke startkorting. De uiteindelijke prijs
-              hangt af van het aantal pagina&apos;s, functies, content, designniveau en gewenste
-              oplevering. Na een korte intake krijg je vooraf een duidelijke vaste prijs.
+              De vanaf-prijs is bedoeld als startpunt. De uiteindelijke prijs hangt af van
+              de hoeveelheid pagina&apos;s, functies, content, designniveau en gewenste
+              oplevering. Na een korte intake krijg je vooraf een duidelijke vaste prijs,
+              zodat je weet waar je aan toe bent.
             </p>
           </div>
 
           <div className="reveal rounded-2xl border border-[#d7b46a]/20 bg-[#d7b46a]/10 p-6 backdrop-blur">
             <p className="text-xl font-semibold text-white">Website live op jouw domein</p>
             <p className="mt-4 text-sm leading-7 text-[#cfc7b6]">
-              Wil je dat de website direct online staat op jouw eigen domein? Dan kan ik helpen
-              met Vercel deployment en domeinkoppeling. Domein- en hostingkosten zijn voor de klant,
-              maar de technische koppeling kan worden meegenomen.
+              Wil je dat de website direct online staat op jouw eigen domein? Dan kan ik
+              helpen met Vercel deployment en domeinkoppeling. Domein- en hostingkosten
+              zijn voor de klant, maar de technische koppeling kan worden meegenomen.
             </p>
           </div>
         </div>
@@ -227,8 +190,8 @@ export default function Pricing() {
         <div className="reveal mt-5 rounded-2xl border border-white/10 bg-black/25 p-5 text-sm leading-7 text-[#b9b0a1] backdrop-blur">
           Onderhoud, updates en toekomstige aanpassingen zitten niet standaard inbegrepen,
           maar kunnen later apart worden besproken. Extra pagina&apos;s, complexe functies,
-          extra revisies, spoedoplevering, betaalintegraties, login-systemen, grote hoeveelheden
-          content of uitgebreide automatisering kunnen invloed hebben op de prijs.
+          extra revisies, spoedoplevering, betaalintegraties, login-systemen, grote
+          hoeveelheden content of uitgebreide automatisering kunnen invloed hebben op de prijs.
         </div>
 
         <div className="reveal mt-12 overflow-hidden rounded-3xl border border-[#d7b46a]/25 bg-white/[0.04] p-6 text-center shadow-[0_24px_100px_rgba(0,0,0,0.32)] backdrop-blur md:p-8">
@@ -258,10 +221,10 @@ export default function Pricing() {
               Mail mij
             </Link>
             <Link
-              href="/contact"
+              href="/werkwijze"
               className="rounded-full border border-white/10 bg-white/[0.045] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-[#d7b46a]/45 hover:text-[#f0ce78] focus:outline-none focus:ring-2 focus:ring-[#f0ce78] focus:ring-offset-2 focus:ring-offset-black"
             >
-              Contactpagina
+              Bekijk werkwijze
             </Link>
           </div>
         </div>
