@@ -4,9 +4,9 @@ import Pricing from "../components/Pricing";
 import SubPageHero from "../components/SubPageHero";
 
 export const metadata: Metadata = {
-  title: "Prijzen",
+  title: "Prijzen en introductiekorting",
   description:
-    "Bekijk de interactieve pakketten van WZN Production: Starter Website, Business Website, Software/Webapp en Promotie Content met duidelijke oplevering en vanaf-prijzen.",
+    "Bekijk de tijdelijke introductieprijzen van WZN Production voor professionele websites en custom AI/software demo's.",
 };
 
 export default function PrijzenPage() {
@@ -14,8 +14,8 @@ export default function PrijzenPage() {
     <PageFrame>
       <SubPageHero
         eyebrow="Prijzen"
-        title="High-end pakketten voor websites, software en promotie."
-        description="Bekijk wat je krijgt, voor wie elk pakket geschikt is en welke oplevering je kunt verwachten."
+        title="Tijdelijke introductieprijzen voor professionele projecten."
+        description="Heldere pakketten voor ondernemers, bedrijven en creators die professioneel online zichtbaar willen worden."
       />
       <Pricing />
     </PageFrame>
