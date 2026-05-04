@@ -151,7 +151,7 @@ export const portfolio = [
 export const pricing = [
   {
     title: "Starter Website",
-    price: "Vanaf \u20ac299",
+    price: "Van \u20ac499,-\nNu voor maar \u20ac249,-",
     description: "Professionele landingspagina voor snelle online aanwezigheid",
     highlights: ["1 pagina website", "Modern design", "Snelle oplevering"],
     included: [
@@ -169,7 +169,7 @@ export const pricing = [
   },
   {
     title: "Business Website",
-    price: "Vanaf \u20ac899",
+    price: "Van \u20ac799,-\nNu voor maar \u20ac399,-",
     description: "Sterke website voor bedrijven die willen groeien",
     highlights: ["Meerdere pagina's", "SEO basis", "Professioneel design"],
     included: [
@@ -187,7 +187,7 @@ export const pricing = [
   },
   {
     title: "Software / Webapp",
-    price: "Vanaf \u20ac1250",
+    price: "Van \u20ac999,-\nNu vanaf \u20ac499,-",
     description: "Maatwerk tools en interactieve systemen",
     highlights: ["Custom functionaliteit", "Gebruikersflow", "Schaalbaar"],
     included: [
@@ -205,7 +205,7 @@ export const pricing = [
   },
   {
     title: "Promotie Content",
-    price: "Vanaf \u20ac149",
+    price: "Van \u20ac299,-\nNu vanaf \u20ac149,-",
     description: "Visuele content die bereik en resultaat oplevert",
     highlights: ["Social content", "Design / visuals", "Snel geleverd"],
     included: [

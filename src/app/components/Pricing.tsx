@@ -50,7 +50,7 @@ export default function Pricing() {
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Prijzen"
-          title="Transparante pakketten. Duidelijke oplevering."
+          title="Tijdelijke introductiekorting voor eerste klanten"
           description="Elke opdracht is anders. Daarom werk ik met vanaf-prijzen. Na een korte intake krijg je een vaste prijs op basis van jouw wensen, aantal pagina's, functies, designniveau en gewenste oplevering."
         />
 
@@ -70,6 +70,7 @@ export default function Pricing() {
           {pricing.map((item) => {
             const isOpen = openPackage === item.title;
             const cardIsHighlighted = item.popular || isOpen;
+            const priceLines = item.price.split("\n");
 
             return (
               <article
@@ -103,7 +104,14 @@ export default function Pricing() {
                   </div>
 
                   <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-                  <p className="mt-4 text-3xl font-bold text-[#f0ce78]">{item.price}</p>
+                  <p className="mt-4 text-3xl font-bold text-[#f0ce78]">
+                    {priceLines.map((line, index) => (
+                      <span key={line}>
+                        {line}
+                        {index < priceLines.length - 1 ? <br /> : null}
+                      </span>
+                    ))}
+                  </p>
                   <p className="mt-4 text-sm leading-7 text-[#b9b0a1]">{item.description}</p>
 
                   <ul className="mt-6 space-y-3 text-sm text-[#efe4c7]">
