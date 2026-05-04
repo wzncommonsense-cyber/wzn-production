@@ -106,7 +106,10 @@ export default function Pricing() {
                   <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                   <p className="mt-4 text-3xl font-bold text-[#f0ce78]">
                     {priceLines.map((line, index) => (
-                      <span key={line}>
+                      <span
+                        key={line}
+                        className={index > 0 ? "text-sm font-semibold text-[#b9b0a1] line-through" : undefined}
+                      >
                         {line}
                         {index < priceLines.length - 1 ? <br /> : null}
                       </span>
