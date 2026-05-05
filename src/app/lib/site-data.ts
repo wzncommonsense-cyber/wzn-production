@@ -3,7 +3,7 @@ export const site = {
   slogan: "Also Impossible is Possible",
   instagram: "https://www.instagram.com/wznproductions",
   instagramHandle: "@wznproductions",
-  tiktok: "https://www.tiktok.com/@wzncommonsense",
+  tiktok: "https://www.tiktok.com/@wznproduction",
   tiktokHandle: "@wzncommonsense",
   email: "info@wznproduction.nl",
 };
